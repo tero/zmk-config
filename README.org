@@ -1,0 +1,67 @@
+* rae-dux
+Endgame wireless split ergo keeb with low-profile switches and keycaps
+
+[[https://i.imgur.com/UK9RJ01.jpg]]
+
+** Features
+1. Minimal design - no diodes, LEDs, OLEDs
+2. Ultra low-profile and transportable
+3. Colemak with home row mods -- really comfy
+4. Caps word for typing identifiers like =THIS_IS_A_CONSTANT=
+
+** Layout
+#+begin_example
+/* ,----------------------------------.                ,----------------------------------.
+ * |  Q   |  W   |  F   |  P   |  B   |                |  J   |  L   |  U   |  Y   |  '   |
+ * |------+------+------+------+------|                |------+------+------+------+------|
+ * | H_A  | H_R  | H_S  | H_T  |  G   |                |  M   | H_N  | H_E  | H_I  | H_O  |
+ * |------+------+------+------+------|                |------+------+------+------+------|
+ * |  Z   |  X   |  C   |  D   |  V   |                |  K   |  H   |  ,   |  .   |  /   |
+ * `------+------+------+------+------+------.  ,------+------+------+------+------+------|
+ *                      |T_TAB |T_ESC |T_SPC |  |T_BSPC|T_DEL |T_ENT |
+ *                      `--------------------'  `--------------------'
+
+/* ,----------------------------------.                ,----------------------------------.
+ * |  '   |  <   |  >   |  "   |  &   |                |  ::  |  .   |  {   |  }   |  %   |
+ * |------+------+------+------+------|                |------+------+------+------+------|
+ * |  !   |  -   |  +   |  =   |  |   |                |  :   |  #   |  (   |  )   |  @   |
+ * |------+------+------+------+------|                |------+------+------+------+------|
+ * |  ^   |  /   |  *   |  \   |  ~   |                |lambda|  $   |  [   |  ]   |  ?   |
+ * `------+------+------+------+------+------.  ,------+------+------+------+------+------|
+ *                      |      |      |      |  |      |      |      |
+ *                      `--------------------'  `--------------------'
+
+/* ,----------------------------------.                ,----------------------------------.
+ * |  _   |  6   |  5   |  4   |  +   |                |  *   |  F4  |  F5  |  F6  | F10  |
+ * |------+------+------+------+------|                |------+------+------+------+------|
+ * |  .   |  3   |  2   |  1   |  -   |                |  /   |  F1  |  F2  |  F3  | F11  |
+ * |------+------+------+------+------|                |------+------+------+------+------|
+ * |  ,   |  9   |  8   |  7   |  =   |                |  :   |  F7  |  F8  |  F9  | F12  |
+ * `------+------+------+------+------+------.  ,------+------+------+------+------+------|
+ *                      |      |  0   |      |  |      |  0   |      |
+ *                      `--------------------'  `--------------------'
+
+/* ,----------------------------------.                ,----------------------------------.
+ * |      |      |      |      |      |                |      |DEL_B |W_BAK |W_FWD |DEL_F |
+ * |------+------+------+------+------|                |------+------+------+------+------|
+ * | LGUI | LALT | LSFT | LCTL |      |                |      | LEFT | DOWN |  UP  | RGHT |
+ * |------+------+------+------+------|                |------+------+------+------+------|
+ * |      |      |      |      |      |                |      | HOME | WBAK | WFWD | END  |
+ * `------+------+------+------+------+------.  ,------+------+------+------+------+------|
+ *                             |      |      |      |  |      |      |      |
+ *                             `--------------------'  `--------------------'
+#+end_example
+
+Base layer:
++ Colemak Mod-DH
+
+Symbol layer:
++ Inspired by Getreuer's symbol layer as most of my programming is in C++/Scheme/Clojure (and soon JavaScript)
++ I used to have my brackets like the Seniply layout because when working in IDEs, normally they will insert the closing bracket for you. However, I found that being able to roll both brackets to be important.
+
+Number layer:
++ Inspired by Pnohty's numpad+, I reversed the order of the numbers so the lowest digits are in the most comfortable positions (following Benford's law)
++ Function keys are on the right hand, on Mac, these send the "actions" by default instead of the actual function keys (e.g., volume up/down are sent when you hit F11/F12)
+
+Nav layer:
++ The mods on the left-hand are sticky, so I can hit them and combine them with keys on other layers
