@@ -114,7 +114,7 @@
 
 		sym_layer {
 			bindings = <
-                   &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &trans              &kp DOT          &kp LBRC                 &kp RBRC      &PRCNT
+                   &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &trans              &kp DOT          &kp LBRC                 &kp RBRC      &kp PRCNT
                    &kp EXCL     &kp MINUS     &kp PLUS      &kp EQUAL          &kp PIPE           &kp COLON           &kp HASH         &kp LPAR                 &kp RPAR      &kp AT
                    &kp CARET    &kp FSLH      &kp STAR      &kp BSLH           &kp TILDE          &trans              &kp DLLR         &kp LBKT                 &kp RBKT      &kp QMARK
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans                 /*&             &*/
