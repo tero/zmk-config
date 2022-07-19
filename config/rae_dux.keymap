@@ -23,16 +23,20 @@
 #define NAV_L   3
 
 / {
+    macros {
+        ZMK_MACRO(scope, bindings = <&kp COLON &kp COLON>;)
+        ZMK_MACRO(lambda, bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
+    };
+
     combos {
         compatible = "zmk,combos";
 
-    // shortcut
-    #define COMBO(NAME, BINDINGS, KEYPOS, TIMEOUT) \
-          combo_##NAME { \
-            timeout-ms = <TIMEOUT>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-          };
+        #define COMBO(NAME, BINDINGS, KEYPOS, TIMEOUT) \
+              combo_##NAME { \
+                timeout-ms = <TIMEOUT>; \
+                bindings = <BINDINGS>; \
+                key-positions = <KEYPOS>; \
+              };
 
         /*                KEY POSITIONS
 
@@ -46,20 +50,15 @@
         COMBO(caps_word_left, &caps_word, 13 14, 60)
         COMBO(caps_word_right, &caps_word, 15 16, 60)
 
-        // COMBO(colon, &kp COLON, 7 8, 60)
-        // COMBO(semicolon, &kp SEMI, 27 28, 60)
-        // COMBO(slash, &kp FSLH, 1 2, 60)
+        COMBO(grave, &kp GRAVE, 1 2, 60)
+        COMBO(colon, &kp COLON, 7 8, 60)
+        COMBO(equal, &kp EQUAL, 21 22, 100)
+        COMBO(semicolon, &kp SEMI, 27 28, 60)
 
-        // COMBO(minus, &kp MINUS, 31 32, 100)
-        // COMBO(underscore, &kp UNDER, 33 34, 100)
-
-        // COMBO(equal, &kp EQUAL, 12 23, 100)
-        // COMBO(enter, &kp ENTER, 17 26, 60)
-
-        // TODO: add `, (, {, =, ;
+        COMBO(minus, &kp MINUS, 31 32, 100)
+        COMBO(underscore, &kp UNDER, 33 34, 100)
     };
 
-    // TODO: wtf does this do
     behaviors {
         lhm: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -114,19 +113,19 @@
 
 		sym_layer {
 			bindings = <
-                   &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &trans              &kp DOT          &kp LBRC                 &kp RBRC      &kp PRCNT
+                   &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &scope              &kp DOT          &kp LBRC                 &kp RBRC      &kp PRCNT
                    &kp EXCL     &kp MINUS     &kp PLUS      &kp EQUAL          &kp PIPE           &kp COLON           &kp HASH         &kp LPAR                 &kp RPAR      &kp AT
-                   &kp CARET    &kp FSLH      &kp STAR      &kp BSLH           &kp TILDE          &trans              &kp DLLR         &kp LBKT                 &kp RBKT      &kp QMARK
+                   &kp CARET    &kp FSLH      &kp STAR      &kp BSLH           &kp TILDE          &lambda             &kp DLLR         &kp LBKT                 &kp RBKT      &kp QMARK
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans                 /*&             &*/
 			>;
 		};
 
 		num_layer {
 			bindings = <
-                   &kp UNDER    &kp N6        &kp N5        &kp N4             &kp PLUS           &kp STAR            &kp F6           &kp F5                   &kp F4        &kp F10
-                   &kp DOT      &kp N3        &kp N2        &kp N1             &kp MINUS          &kp FSLH            &kp F3           &kp F2                   &kp F1        &kp F11
-                   &kp COMMA    &kp N9        &kp N8        &kp N7             &kp EQUAL          &kp COLON           &kp F9           &kp F8                   &kp F7        &kp F12
-				 /*&            &*/           &trans        &kp N0             &trans             &kp N0              &trans           &trans                 /*&             &*/
+                   &kp UNDER    &kp N6        &kp N5        &kp N4             &kp PLUS           &kp STAR            &kp F4           &kp F5                   &kp F6        &kp F10
+                   &kp DOT      &kp N3        &kp N2        &kp N1             &kp MINUS          &kp FSLH            &kp F1           &kp F2                   &kp F3        &kp F11
+                   &kp COMMA    &kp N9        &kp N8        &kp N7             &kp EQUAL          &kp COLON           &kp F7           &kp F8                   &kp F9        &kp F12
+				 /*&            &*/           &trans        &trans             &kp N0             &kp N0              &trans           &trans                 /*&             &*/
 			>;
 		};
 
