@@ -55,8 +55,8 @@
         COMBO(equal, &kp EQUAL, 21 22, 100)
         COMBO(semicolon, &kp SEMI, 27 28, 60)
 
-        COMBO(minus, &kp MINUS, 31 32, 100)
-        COMBO(underscore, &kp UNDER, 33 34, 100)
+        COMBO(minus, &kp MINUS, 13 31, 100)
+        COMBO(underscore, &kp UNDER, 16 34, 100)
     };
 
     behaviors {
