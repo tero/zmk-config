@@ -52,11 +52,6 @@ Endgame wireless split ergo keeb with low-profile switches and keycaps
  *                      `--------------------'  `--------------------'
 #+end_example
 
-Combos:
-+ t+g / m+n: caps_word
-+ w+f: =`=; u+y: =:= ; x+c: ===: ,+.: =;=
-+ spc+bspc: =-=; esc+rep: =_=
-
 Base layer:
 + Colemak Mod-DH
 
