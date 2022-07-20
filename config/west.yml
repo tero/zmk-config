@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: andrewjrae
-      revision: andrewjrae
+      revision: min-prior-ms
       import: app/west.yml
   self:
     path: config
