@@ -119,7 +119,7 @@
                    &kp Q        &kp W         &kp F              &kp P              &kp B              &kp J              &kp L               &kp U                 &kp Y         &kp APOS
                    &lhm LALT A  &lhm LGUI R   &lhm LSHFT S       &lhm LCTRL T       &kp G              &kp M              &rhm LCTRL N        &rhm RSHFT E          &rhm LGUI I   &rhm LALT O
                    &kp Z        &kp X         &kp C              &kp D              &kp V              &kp K              &kp H               &kp COMMA             &kp DOT       &kp FSLH
-				 /*&            &*/           &base_lt NAV_L TAB &base_lt SYM_L SPC &base_lt NUM_L ESC &rpt_lt NUM_L 0    &base_lt SYM_L BSPC &base_lt NAV_L RET  /*&             &*/
+				 /*&            &*/           &base_lt NAV_L TAB &base_lt SYM_L SPC &base_lt NUM_L ESC &base_lt NUM_L DEL &base_lt SYM_L BSPC &base_lt NAV_L RET  /*&             &*/
 			>;
 		};
 
@@ -128,7 +128,7 @@
                    &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &scope              &kp DOT          &kp LBRC                 &kp RBRC      &kp PRCNT
                    &kp EXCL     &kp MINUS     &kp PLUS      &kp EQUAL          &kp PIPE           &kp COLON           &kp HASH         &kp LPAR                 &kp RPAR      &kp AT
                    &kp CARET    &kp FSLH      &kp STAR      &kp BSLH           &kp TILDE          &lambda             &kp DLLR         &kp LBKT                 &kp RBKT      &kp QMARK
-				 /*&            &*/           &trans        &kp DEL            &trans             &trans              &kp DEL          &trans                 /*&             &*/
+				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans                 /*&             &*/
 			>;
 		};
 
