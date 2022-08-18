@@ -22,6 +22,10 @@
 #define NUM_L   2
 #define NAV_L   3
 
+#define CUT   LG(X)
+#define COPY  LG(C)
+#define PASTE LG(V)
+
 #define MEH(KEY) LS(LC(LA(LG(KEY))))
 
 / {
@@ -145,7 +149,7 @@
 			bindings = <
                    &kp MEH(T)   &trans        &trans        &trans             &bt BT_CLR         &bt BT_PRV          &bt BT_NXT       &trans                   &trans        &kp MEH(T)
                    &sk LALT     &sk LGUI      &sk LSHFT     &sk LCTRL          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
-                   &trans       &trans        &trans        &trans             &trans             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
+                   &trans       &kp CUT       &kp COPY      &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
 			>;
 		};
