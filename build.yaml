@@ -14,6 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: rae_dux_left
+    shield: dna_sweep_left
   - board: nice_nano_v2
-    shield: rae_dux_right
+    shield: dna_sweep_right

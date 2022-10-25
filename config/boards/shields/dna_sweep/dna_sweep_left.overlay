@@ -4,4 +4,4 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "rae_dux.dtsi"
+#include "dna_sweep.dtsi"

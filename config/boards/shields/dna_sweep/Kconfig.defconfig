@@ -1,17 +1,17 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_RAE_DUX_LEFT
+if SHIELD_DNA_SWEEP_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "rae-dux"
+	default "DNA Sweep"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_RAE_DUX_LEFT || SHIELD_RAE_DUX_RIGHT
+if SHIELD_DNA_SWEEP_LEFT || SHIELD_DNA_SWEEP_RIGHT
 
 config ZMK_SPLIT
 	default y

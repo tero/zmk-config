@@ -1,0 +1,11 @@
+file_format: "1"
+id: dna_sweep
+name: DNA Sweep
+type: shield
+url: https://github.com/tero/rae-dux
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - dna_sweep_left
+  - dna_sweep_right
