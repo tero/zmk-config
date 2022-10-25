@@ -12,11 +12,11 @@ Endgame wireless split ergo keeb with low-profile switches and keycaps
 ** Layout
 #+begin_example
 /* ,----------------------------------.                ,----------------------------------.
- * |  Q   |  W   |  F   |  P   |  B   |                |  J   |  L   |  U   |  Y   |  '   |
+ * |  Q   |  W   |  E   |  R   |  T   |                |  Y   |  U   |  I   |  O   |  P   |
  * |------+------+------+------+------|                |------+------+------+------+------|
- * | ⌥_A  | ⌘_R  | ⇧_S  | ⌃_T  |  G   |                |  M   | ⌃_N  | ⇧_E  | ⌘_I  | ⌥_O  |
+ * | ⌥_A  | ⌘_S  | ⇧_D  | ⌃_F  |  G   |                |  H   | ⌃_J  | ⇧_K  | ⌘_L  | ⌥_Ö  |
  * |------+------+------+------+------|                |------+------+------+------+------|
- * |  Z   |  X   |  C   |  D   |  V   |                |  K   |  H   |  ,   |  .   |  /   |
+ * |  Z   |  X   |  C   |  V   |  B   |                |  N   |  M   |  ,   |  .   |  -   |
  * `------+------+------+------+------+------.  ,------+------+------+------+------+------|
  *                      |3_TAB |1_SPC |2_ESC |  |2_DEL |1_BSPC|3_ENT |
  *                      `--------------------'  `--------------------'
@@ -53,7 +53,7 @@ Endgame wireless split ergo keeb with low-profile switches and keycaps
 #+end_example
 
 Base layer:
-+ Colemak Mod-DH
++ Qwerty Mod-DH
 
 Symbol layer:
 + Inspired by Getreuer's symbol layer as most of my programming is in C++/Scheme/Clojure (and soon JavaScript)
