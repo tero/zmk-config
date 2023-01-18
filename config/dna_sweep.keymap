@@ -31,7 +31,7 @@
 / {
     macros {
         ZMK_MACRO(scope, wait-ms = <30>; tap-ms = <30>; bindings = <&kp COLON &kp COLON>;)
-        ZMK_MACRO(lambda, wait-ms = <30>; tap-ms = <30>; bindings = <&kp L &kp A &kp M &kp B &kp D &kp A>;)
+        ZMK_MACRO(accent, wait-ms = <30>; tap-ms = <30>; bindings = <&macro_press &kp LSHFT>, <&macro_tap &kp GRAVE>, <&macro_release &kp LSHFT>;)
     };
 
     combos {
@@ -129,7 +129,7 @@
 
 		sym_layer {
 			bindings = <
-                   &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &scope              &kp DOT          &kp LBRC                 &kp RBRC      &kp PRCNT
+                   &kp APOS     &kp LT        &kp GT        &kp DQT            &kp AMPS           &accent              &kp DOT          &kp LBRC                 &kp RBRC      &kp PRCNT
                    &kp EXCL     &kp MINUS     &kp PLUS      &kp EQUAL          &kp PIPE           &kp COLON           &kp HASH         &kp LPAR                 &kp RPAR      &kp AT
                    &kp CARET    &kp FSLH      &kp STAR      &kp BSLH           &kp TILDE          &kp GRAVE           &kp DLLR         &kp LBKT                 &kp RBKT      &kp QMARK
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans                 /*&             &*/
