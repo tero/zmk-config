@@ -31,7 +31,7 @@
 / {
     macros {
         ZMK_MACRO(scope, wait-ms = <30>; tap-ms = <30>; bindings = <&kp COLON &kp COLON>;)
-        ZMK_MACRO(accent, wait-ms = <30>; tap-ms = <30>; bindings = <&macro_press &kp LSHFT>, <&macro_tap &kp GRAVE>, <&macro_release &kp LSHFT>;)
+        ZMK_MACRO(accent, wait-ms = <30>; tap-ms = <30>; bindings = <&macro_press &kp LALT>, <&macro_tap &kp E>, <&macro_release &kp LALT>;)
     };
 
     combos {
