@@ -146,7 +146,7 @@
 
 		nav_layer {
 			bindings = <
-                   &kp MEH(T)   &trans        &trans        &trans             &bt BT_CLR         &bt BT_PRV          &bt BT_NXT       &trans                   &trans        &kp MEH(T)
+                   &kp MEH(T)   &trans        &trans        &trans             &bt BT_CLR         &bt BT_SEL 0        &bt BT_SEL 1     &bt BT_SEL 2             &bt BT_SEL 3        &kp MEH(T)
                    &sk LALT     &sk LGUI      &sk LSHFT     &sk LCTRL          &trans             &trans              &kp LEFT         &kp DOWN                 &kp UP        &kp RIGHT
                    &trans       &kp CUT       &kp COPY      &kp PASTE          &trans             &trans              &kp HOME         &kp K_PREV               &kp K_NEXT    &kp END
 				 /*&            &*/           &trans        &trans             &trans             &trans              &trans           &trans             /*&             &*/
